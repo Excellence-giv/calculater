@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Scientific Calculator</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container mt-5">
+    <div class="calculator bg-dark text-white p-4 rounded shadow">
+      <div id="display" class="display mb-3 text-end fs-4">0</div>
+      <div class="row g-2">
+        <!-- Scientific Functions -->
+        <div class="col-3"><button class="btn btn-secondary w-100" onclick="press('sin')">sin</button></div>
+        <div class="col-3"><button class="btn btn-secondary w-100" onclick="press('cos')">cos</button></div>
+        <div class="col-3"><button class="btn btn-secondary w-100" onclick="press('tan')">tan</button></div>
+        <div class="col-3"><button class="btn btn-danger w-100" onclick="clearDisplay()">AC</button></div>
+
+        <div class="col-3"><button class="btn btn-secondary w-100" onclick="press('log')">log</button></div>
+        <div class="col-3"><button class="btn btn-secondary w-100" onclick="press('ln')">ln</button></div>
+        <div class="col-3"><button class="btn btn-secondary w-100" onclick="press('√')">√</button></div>
+        <div class="col-3"><button class="btn btn-secondary w-100" onclick="press('^')">xʸ</button></div>
+
+        <!-- Numbers and Operators -->
+        <div class="col-3"><button class="btn btn-light w-100" onclick="press('7')">7</button></div>
+        <div class="col-3"><button class="btn btn-light w-100" onclick="press('8')">8</button></div>
+        <div class="col-3"><button class="btn btn-light w-100" onclick="press('9')">9</button></div>
+        <div class="col-3"><button class="btn btn-warning w-100" onclick="press('/')">÷</button></div>
+
+        <div class="col-3"><button class="btn btn-light w-100" onclick="press('4')">4</button></div>
+        <div class="col-3"><button class="btn btn-light w-100" onclick="press('5')">5</button></div>
+        <div class="col-3"><button class="btn btn-light w-100" onclick="press('6')">6</button></div>
+        <div class="col-3"><button class="btn btn-warning w-100" onclick="press('*')">×</button></div>
+
+        <div class="col-3"><button class="btn btn-light w-100" onclick="press('1')">1</button></div>
+        <div class="col-3"><button class="btn btn-light w-100" onclick="press('2')">2</button></div>
+        <div class="col-3"><button class="btn btn-light w-100" onclick="press('3')">3</button></div>
+        <div class="col-3"><button class="btn btn-warning w-100" onclick="press('-')">−</button></div>
+
+        <div class="col-3"><button class="btn btn-light w-100" onclick="press('0')">0</button></div>
+        <div class="col-3"><button class="btn btn-light w-100" onclick="press('.')">.</button></div>
+        <div class="col-3"><button class="btn btn-success w-100" onclick="calculate()">=</button></div>
+        <div class="col-3"><button class="btn btn-warning w-100" onclick="press('+')">+</button></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
